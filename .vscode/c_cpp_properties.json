@@ -1,47 +1,28 @@
 {
     "configurations": [
         {
-            "name": "DKP Aarch64 Windows",
-            "includePath": [
-                "C:/devkitPro/devkitA64/aarch64-none-elf/include/**",
-                "C:/devkitPro/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**",
-                "C:/devkitPro/libnx/include/**",
-                "C:/devkitPro/portlibs/switch/include/**",
-                "C:/devkitPro/portlibs/switch/include/freetype2/**",
-                "${workspaceFolder}/include/**",
-                "${workspaceFolder}/libs/libtesla/include/**"
-            ],
-            "defines": [
-                "SWITCH",
-                "__SWITCH__",
-                "__aarch64__"
-            ],
-            "compilerPath": "C:/devkitPro/devkitA64/bin/aarch64-none-elf-g++",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
-        },
-        {
-            "name": "DKP Aarch64 Linux",
-            "includePath": [
-                "/opt/devkitpro/devkitA64/aarch64-none-elf/include/**",
-                "/opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**",
-                "/opt/devkitpro/libnx/include/**",
-                "/opt/devkitpro/portlibs/switch/include/**",
-                "/opt/devkitpro/portlibs/switch/include/**",
-                "/opt/devkitpro/portlibs/switch/include/freetype2/**",
-                "${workspaceFolder}/include/**",
-                "${workspaceFolder}/libs/libtesla/include/**"
-            ],
-            "defines": [
-                "SWITCH",
-                "__SWITCH__",
-                "__aarch64__"
-            ],
-            "compilerPath": "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
+         "name": "Switch",
+         "includePath": [
+            "${devkitA64}/aarch64-none-elf/include/**",
+            "${devkitA64}/lib/gcc/aarch64-none-elf/8.3.0/include/**",
+            "${devkitpro}/libnx/include/**",
+            "${devkitpro}/portlibs/switch/include/*",
+            "${workspaceFolder}/libs/libtesla/include/**"
+         ],
+         "defines": [
+            "UNICODE",
+            "_UNICODE",
+            "__aarch64__",
+            "__SWITCH__",
+            "HAVE_LIBNX",
+            "EXPERIMENTAL",
+            "DEBUG"
+         ],
+         "windowsSdkVersion": "10.0.17763.0",
+         "compilerPath": "${devkitA64}/bin/aarch64-none-elf-gcc",
+         "cStandard": "c11",
+         "cppStandard": "c++17",
+         "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4

@@ -45,7 +45,15 @@ SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include libs/libtesla/include
 
+VERSION_MAJOR := 0
+VERSION_MINOR := 1
+VERSION_MICRO := 0
+
+APP_TITLE   := Time Travel Overlay
+APP_AUTHOR  := SeanOMik
+APP_VERSION := ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_MICRO}-beta
 NO_ICON		:=  1
+#ICON := icon.jpg
 
 #---------------------------------------------------------------------------------
 # options for code generation
